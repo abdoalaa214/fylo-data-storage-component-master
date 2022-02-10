@@ -1,0 +1,234 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    height: 100vh;
+    font-family: Raleway;
+    background-color: hsl(229, 57%, 11%);
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-img {
+    background-image: url(images/bg-desktop.png);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: -999;
+}
+.container-1 {
+    /* Size */
+    width: 320px;
+    height: 210px;
+    border-radius: 10px 100px 10px 10px;
+    /* Color */
+    background-color: hsl(228, 56%, 26%);
+}
+
+
+.container-1__logo {
+    position: relative;
+    top: 45px;
+    left: -140px;
+}
+.container-1__icon {
+    /* Size */
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    /* Color */
+    background-color: hsl(229, 57%, 11%);
+    /* Position */
+    position: relative;
+    top: 60%;
+    left: 40px;
+    margin-right: 12px;
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+
+
+
+.container-2 {
+    /* Size */
+    width: 515px;
+    height: 150px;
+    border-radius: 10px;
+    /* Color */
+    background-color: hsl(228, 56%, 26%);
+    color: white;
+    /* Position */
+    position: relative;
+    top: 30px;
+    margin-left: 30px;
+}
+
+.container-2 p {
+    /* Position */
+    position: relative;
+    top: 40px;
+    left: 40px;
+    /* Font */
+    font-size: 0.84rem;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.range {
+    /* Size */
+    width: 85%;
+    height: 20px;
+    border-radius: 20px;
+    /* Color */
+    background-color: #151e49;
+    /* Position */
+    position: relative;
+    margin: 0 7.5%;
+    top: 55px;
+    
+}
+
+.range__fill-bar {
+    /* size */
+    width: 75%;
+    height: 14px;
+    /* Position */
+    position: relative;
+    top: 3px;
+    left: 4px;
+    border-radius: 20px;
+    /* Gradient */
+    background-image: linear-gradient(
+        to right,
+        hsl(6, 100%, 80%),
+        hsl(335, 100%, 65%)
+    );
+}
+
+.fill-bar--point {
+    /* Size */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* Color */
+    background-color: white;
+    /* Position */
+    position: relative;
+    top: 2px;
+    left: 96%;
+    cursor: grab;
+}
+
+.range__text {
+    /* Flex */
+    display: flex;
+    justify-content: space-between;
+    /* Position */
+    position: relative;
+    top: 15px;
+    /* Font */
+    font-size: 1.1rem;
+}
+
+
+
+.gb-left {
+    /* size */
+    width: 160px;
+    height: 65px;
+    border-radius: 10px;
+    background: white;
+    color: #7d7d80;
+    /* Position */
+    position: absolute;
+    top: -50px;
+    left: 320px;
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.71rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+.gb-left span {
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-right: 10px;
+    color: #121432;
+
+}
+.gb-left:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 80%;
+    left: 145px;
+    transform: rotate(318.5deg);
+    border-top: 10px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 23px solid white;
+}
+
+
+@media (max-width:375px) {
+    body {
+        flex-wrap: wrap;
+    }
+    .background-img {
+        background-image: url(images/bg-mobile.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -999;
+    }
+    .container-1 {
+        width: 90%;
+        position: relative;
+        top: 5%;
+        margin: 0;
+        display: inline-block;
+    }
+    .container-1__logo {
+        position: relative;
+        top: 45px;
+        left: -115px;
+    }
+    .container-2 {
+        width: 90%;
+        position: relative;
+        top: -18%;
+        margin: 0;
+    }
+    .container-1__icon {
+        margin-right: 8px;
+    }
+    .gb-left {
+        position: absolute;
+        top: 130px;
+        left: 78px;
+    }
+    .gb-left::after{
+        display: none;
+    }
+}
+
+@media (max-width:1440px) {
+
+}

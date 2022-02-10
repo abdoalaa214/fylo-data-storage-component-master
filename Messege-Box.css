@@ -1,0 +1,47 @@
+.bar {
+    width: 155px;
+    height: 80px;
+    background: white;
+    position: absolute;
+    top: -54px;
+    left: 68%;
+    border-radius: 5px;
+}
+.bar:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 85%;
+    left: 91%;
+    transform: rotate(321deg);
+    border-top: 10px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 21px solid white;
+}
+
+
+
+
+
+/* .bar:after, .bar:before {
+    position: absolute;  
+    content: "";
+    width: 0; 
+    height: 0; 
+    top: 50%;
+}
+.bar:before {
+    right: -8px;
+    margin-top: -8px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-left: 8px solid #830303; 
+}
+.bar:after {
+    right: -7px;
+    margin-top: -7px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent; 
+    border-left: 7px solid #C03737; 
+} */
